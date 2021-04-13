@@ -1,0 +1,36 @@
+.hero {
+	background-color: #111111;
+	background-image: url("../../assets/homepage/hero-bg-desktop.jpg");
+	background-repeat: no-repeat;
+    background-position: right;
+	color: white;
+	padding-top: 65px;
+    padding-bottom: 198px;
+    .logo {
+        font-size: 40px;
+        color: white;
+        font-weight: 900;
+    }
+	.hero-text {
+		width: 523px;
+		// height: 364px;
+		h1 {
+			font-weight: 10;
+			font-size: 64px;
+			line-height: 72px;
+            letter-spacing: -0.8px;
+		}
+		p {
+			font-size: 18px;
+			line-height: 30px;
+		}
+		button {
+			width: 245px;
+			height: 64px;
+			margin-top: 42px;
+			background-color: transparent;
+			border: 1px solid white;
+			letter-spacing: 2px;
+		}
+	}
+}
