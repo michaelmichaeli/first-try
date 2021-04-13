@@ -4,7 +4,7 @@ import userService from './services/userService.js'
 
 function App() {
 
-    const [ user, setUser ] = useState;
+    const [ users, setUsers ] = useState;
     const [ fullName, setFullName ] = useState;
 
     useEffect(() => {
@@ -14,7 +14,7 @@ function App() {
 
     const loadUsers = async () => {
         const users = await userService.query()
-        setUser({ users })
+        setUsers(users)
     }
 
     const showName = () => {
@@ -28,7 +28,7 @@ function App() {
             return (
             <div>
                 <h3>This is a Class Component</h3>
-                <h4>{this.state.users.length}</h4>
+                <h4>{users.length}</h4>
                 <input
                     type="text"
                     onChange={handleNameInput}
